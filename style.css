@@ -1,0 +1,29 @@
+.media{
+  
+    
+    margin-top: 10%; 
+    margin-left: 10%;
+    
+
+}
+
+.title{
+	font-family: "Times New Roman", Times, serif;
+	color: #666699;
+	font-weight: bold;
+	line-height: 1.05;
+	margin-bottom: 1rem;
+}
+
+.btn {
+	text-align: center;
+	margin-top: 1rem;
+	margin-left: 10rem;
+	background-color: #6610f2;
+	color: white;
+}
+
+.media-paragraph {
+	color: #5b5e6d;
+	max-width: 44rem;
+}

@@ -1,29 +1,67 @@
-.media{
-  
-    
-    margin-top: 10%; 
-    margin-left: 10%;
-    
+	.navbar{
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 1.6em;
+	}
 
+
+
+	.img-intro{
+	max-width:600px;
+	height:auto;
+	float:right;
+	margin-top: 20%;
+	margin-bottom: 50px;
+	
 }
 
-.title{
-	font-family: "Times New Roman", Times, serif;
+
+	h1{
+	font-family: "Times New Roman",Georgia,serif;
 	color: #666699;
 	font-weight: bold;
+	letter-spacing: normal;
 	line-height: 1.05;
 	margin-bottom: 1rem;
+	margin-top: 40%;
+	margin-left: 30px;
 }
 
-.btn {
-	text-align: center;
-	margin-top: 1rem;
-	margin-left: 10rem;
-	background-color: #6610f2;
-	color: white;
-}
-
-.media-paragraph {
-	color: #5b5e6d;
+	.lead{
+	font-family: "Verdana"
+	color: black;
+	margin-top: 10px;
+	margin-left: 30px;
 	max-width: 44rem;
+	color: #5b5e6d;
 }
+
+	.btn{
+		text-align: center;
+		margin-top: 1rem;
+		margin-left: 10rem;
+		background-color: #666699;
+		color: white;
+		
+
+	}
+
+	.description {
+	    font-family: Courier New; Open-Sans;
+	    font-size: 150%;
+	    text-align: center;
+	    margin-bottom: 100px;
+	    margin-top: 50px;
+	}
+
+	
+	#about .lead {
+		margin-top: 20px;
+		line-height: 1.4;
+		font-family: "Times New Roman"
+		color: #5b5e6d;
+
+	}
+	
+

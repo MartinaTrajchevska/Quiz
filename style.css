@@ -1,4 +1,5 @@
-	.navbar{
+#page1
+.navbar{
 		float: none;
 		margin: 0 auto;
 		text-align: center;
@@ -7,8 +8,8 @@
 
 
 
-	.img-intro{
-	max-width:600px;
+.img-intro{
+	max-width:100%;
 	height:auto;
 	float:right;
 	margin-top: 20%;
@@ -17,7 +18,7 @@
 }
 
 
-	h1{
+h1{
 	font-family: "Times New Roman",Georgia,serif;
 	color: #666699;
 	font-weight: bold;
@@ -28,26 +29,29 @@
 	margin-left: 30px;
 }
 
-	.lead{
+.lead{
+
 	font-family: "Verdana"
 	color: black;
 	margin-top: 10px;
 	margin-left: 30px;
 	max-width: 44rem;
 	color: #5b5e6d;
+	
 }
 
-	.btn{
-		text-align: center;
-		margin-top: 1rem;
-		margin-left: 10rem;
-		background-color: #666699;
-		color: white;
+.btn{
+
+	text-align: center;
+	margin-top: 1rem;
+	margin-left: 10rem;
+	background-color: #666699;
+	color: white;
 		
 
 	}
 
-	.description {
+.description {
 	    font-family: Courier New; Open-Sans;
 	    font-size: 150%;
 	    text-align: center;
@@ -56,12 +60,10 @@
 	}
 
 	
-	#about .lead {
+#about .lead {
 		margin-top: 20px;
 		line-height: 1.4;
 		font-family: "Times New Roman"
 		color: #5b5e6d;
 
 	}
-	
-

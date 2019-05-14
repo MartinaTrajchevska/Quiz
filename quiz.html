@@ -1,56 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<meta charset="UTF-8">
-	<title>QUIZ: Find out which programming language is the best for you</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body id="page1">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#quiz.html">QUIZ</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+<html>
+	<head>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="quiz.html">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
-	<div class="container">
-		<div class="row">
-		    <div class="col-md-6" id="image">
-		      	<img class="img-intro" src="images/code.png">
-		    </div>
-		    <div class="col-md-6">
-		        <h1>Find out which programming <br> language fits you the best</h1>
-				<p class="lead">Want to start to code but don't know from where to start?!<br> Do this little helper and find out what is best for you.</p>
-				<a href="page2.html" class="btn btn-primary btn-lg">Start Here</a>
-		    </div>
-		    
-	    </div>  
-	</div>   
-	<div class="container">
-		<div class="row section topspace" id="about" itemprop="description">
-				<div class="col-md-12">
-					<p class="lead text-center text-muted">Nowadays programming is a decision of many young people. Even people who thought that they would work something completely different, today they begin to learn how to code.</p> 
-					<p class="lead text-center text-muted">But from where to start?
-					There is a lot of programming languages, how to decide what is best for you?
-					To make the right choice, you should make this quick quiz and easily find out in which programming language you’re best in.
-					</p>
-					
-				</div>
-			</div>
-					 	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+		
+
+		<p id="demo"></p>
+
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript" href="quiz.js"></script>
+	</head>
+	<body>
+	<div>
+		<h1>Find out in which programming language you're the best in </h1>
+	</div>
+	<div id="quiz">
+		<div class="questions">
+			<p>What is your current level of technical experience?</p>
+			<form class="options">
+			  <input type="radio" name="question1" value="verylittle"> Very little<br>
+			  <input type="radio" name="question2" value="donthave"> I don't have any experience<br>
+			  <input type="radio" name="question3" value="some"> I have some background<br>
+			  <input type="radio" name="question4" value="lots"> Lots. I love to expand my coding knowledge<br> 
+
+			 </form>
+		</div>
+
+		<div class="questions">
+			<p>What type of website do you want to create?</p>
+			<form class="options">
+			<label>
+			  <input type="radio" name="experience" value="business"> Business<br></label>
+			<label><input type="radio" name="experience" value="E-commerce"> E-commerce online store<br></label> 
+			 <label><input type="radio" name="experience" value="information"> Information<br></label>
+			 <label><input type="radio" name="experience" value="blog"> Blog<br></label>
+			 <label><input type="radio" name="experience" value="portfolio"> Portfolio<br></label>
+
+
+
+			 </form>
+		</div>
+
+		<div class="questions">
+			<p>What sort of developer you want to be?</p>
+			<form class="options">
+			  <input type="radio" name="experience" value="game"> Game<br>
+			  <input type="radio" name="experience" value="web"> Web<br>
+			  <input type="radio" name="experience" value="mobile"> Mobile<br>
+			  <input type="radio" name="experience" value="desktopsoft"> Desktop Software<br> 
+			  <input type="radio" name="experience" value="data"> Data Scientist<br> 
+			 </form>
+		</div>
+		
+		<div class="questions">
+			<p>What kind of projects do you want to build?</p>
+			<form class="options">
+				<input type="radio" name="experience" value="robots"> Robots <br>
+				<input type="radio" name="experience" value="games"> Virtual Reality Games <br>
+				<input type="radio" name="experience" value="apps"> Apps <br>
+				<input type="radio" name="experience" value="websites"> Functional Websites <br>
+				<input type="radio" name="experience" value="">  <br>
+			</form>
+
+
+
+		</div>
+
+	</div>
+	</body>
 </html>
+
+ 
+
+
+
+   

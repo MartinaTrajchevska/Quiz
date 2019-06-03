@@ -1,75 +1,80 @@
 <!DOCTYPE html>
-<html>
-	<head>
-
-		
-
-		<p id="demo"></p>
-
-		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript" href="quiz.js"></script>
-	</head>
-	<body>
-	<div>
-		<h1>Find out in which programming language you're the best in </h1>
-	</div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
 	<div id="quiz">
-		<div class="questions">
-			<p>What is your current level of technical experience?</p>
-			<form class="options">
-			  <input type="radio" name="question1" value="verylittle"> Very little<br>
-			  <input type="radio" name="question2" value="donthave"> I don't have any experience<br>
-			  <input type="radio" name="question3" value="some"> I have some background<br>
-			  <input type="radio" name="question4" value="lots"> Lots. I love to expand my coding knowledge<br> 
-
-			 </form>
-		</div>
-
-		<div class="questions">
-			<p>What type of website do you want to create?</p>
-			<form class="options">
-			<label>
-			  <input type="radio" name="experience" value="business"> Business<br></label>
-			<label><input type="radio" name="experience" value="E-commerce"> E-commerce online store<br></label> 
-			 <label><input type="radio" name="experience" value="information"> Information<br></label>
-			 <label><input type="radio" name="experience" value="blog"> Blog<br></label>
-			 <label><input type="radio" name="experience" value="portfolio"> Portfolio<br></label>
-
-
-
-			 </form>
-		</div>
-
-		<div class="questions">
-			<p>What sort of developer you want to be?</p>
-			<form class="options">
-			  <input type="radio" name="experience" value="game"> Game<br>
-			  <input type="radio" name="experience" value="web"> Web<br>
-			  <input type="radio" name="experience" value="mobile"> Mobile<br>
-			  <input type="radio" name="experience" value="desktopsoft"> Desktop Software<br> 
-			  <input type="radio" name="experience" value="data"> Data Scientist<br> 
-			 </form>
-		</div>
-		
-		<div class="questions">
-			<p>What kind of projects do you want to build?</p>
-			<form class="options">
-				<input type="radio" name="experience" value="robots"> Robots <br>
-				<input type="radio" name="experience" value="games"> Virtual Reality Games <br>
-				<input type="radio" name="experience" value="apps"> Apps <br>
-				<input type="radio" name="experience" value="websites"> Functional Websites <br>
-				<input type="radio" name="experience" value="">  <br>
-			</form>
-
-
-
-		</div>
-
+	  <div id="quiz-header">
+	    <h1>Find out in which programming language you're the best in</h1>
+	    <!-- Optionally add a home button -->
+	    <p><a id="quiz-home-btn">Home</a></p>
+	  </div>
+	  <div id="quiz-start-screen">
+	    <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
+	  </div>
 	</div>
-	</body>
+</div>
+<link rel="stylesheet" type="text/css" href="css/jquery.quiz.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+<script src="js/jquery.quiz.js"> </script>
+<script type="text/javascript">
+	$('#quiz').quiz({
+	  //resultsScreen: '#results-screen',
+	  //counter: false,
+	  //homeButton: '#custom-home',
+	  counterFormat: 'Question %current of %total',
+	  questions: [
+	    {
+	      'q': 'What is your current level of technical experience?',
+	      'options': [
+	        'Very little',
+	        'I dont have any experience',
+	        'I have some background' ,
+	        'Lots. I love to expand my coding knowledge<br>'
+
+	      ],
+	      
+	    },
+	    {
+	      'q': 'What type of website do you want to create?',
+	      'options': [
+	        'Business',
+	        'E-commerce online store',
+	        'Information' ,
+	        'Blog' ,
+	        'Portfolio' 
+	      ],
+	    },
+	    {
+	      'q': 'What sort of developer you want to be?',
+	      'options': [
+	        'Game',
+	        'Web',
+	        'Mobile' ,
+	        'Desktop Software' ,
+	        'Data Scientist'
+	      ],
+	    },
+	    {
+	      'q': 'What kind of projects do you want to build?',
+	      'options': [
+	        'Robots',
+	        'Virtual Reality Games',
+	        'Apps',
+	        'Functional Websites'
+	      ],
+	    }
+	  ]
+	});	
+</script>
+</body>
 </html>
-
- 
-
-
-
-   
